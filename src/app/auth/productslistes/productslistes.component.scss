@@ -1,0 +1,56 @@
+
+.filter-by-price .ui-slider .ui-slider-handle {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #000;
+    top: -3px;
+    margin-left: -13px;
+  }
+  
+  .filter-by-price .ui-slider span:first-of-type {
+    margin-left: 0;
+  }
+  
+  .ui-slider .ui-slider-range {
+    border-radius: 10px;
+    position: absolute;
+    background-color: green;
+    height: 7px;
+  }
+  
+  .filter-by-price p {
+    margin-bottom: 0;
+  }
+  
+  .filter-by-price input#amount {
+    width: 40%;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+    border: none;
+    background-color: transparent;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  .filter-by-price label {
+    font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+    line-height: 33px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #7f7f7f;
+  }
+  
+  .filter-by-price p > a {
+    float: right;
+    padding: 0 15px;
+  }
+  
