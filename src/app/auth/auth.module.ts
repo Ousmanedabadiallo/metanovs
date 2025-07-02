@@ -15,6 +15,9 @@ import { CollectionsListesComponent } from './collections-listes/collections-lis
 import { CategorieslistesComponent } from './categorieslistes/categorieslistes.component';
 import { CollectionComponent } from './collection/collection.component';
 import { ProductslistesComponent } from './productslistes/productslistes.component';
+import { MarquesComponent } from './marques/marques.component';
+import { MarqueslistesComponent } from './marqueslistes/marqueslistes.component';
+import { PasswordComponent } from './password/password.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +32,10 @@ import { ProductslistesComponent } from './productslistes/productslistes.compone
       CollectionsListesComponent,
       CategorieslistesComponent,
       CollectionComponent,
-      ProductslistesComponent
+      ProductslistesComponent,
+      MarquesComponent,
+      MarqueslistesComponent,
+      PasswordComponent
     ],
     imports: [
       CommonModule,

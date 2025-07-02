@@ -2,7 +2,7 @@
   <div class="container">
     <div class="navbar-translate">
       <a class="navbar-brand" href="accueil" rel="tooltip" title="MB • Metanova">
-        <img class="logo-dark" src="assets/images/logo_light.png" style="height:35px;" alt="logo">
+        <img class="logo-dark" src="assets/images/v_logos.png" style="height:35px;" alt="logo">
       </a>
       <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar top-bar"></span>
@@ -12,20 +12,47 @@
     </div>
     
     <div class="collapse navbar-collapse">
+      
+    <form class="form-inline mr-auto" data-background-color>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="now-ui-icons location_bookmark text-dark"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="recherche...">
+      </div>
+    </form>
       <ul class="navbar-nav mx-auto">
+        <!-- <li class="nav-item">
+            <a class="nav-link text-dark font-weight-bold" href="boutiques-listes" rel="tooltip" title="Liste des boutiques">
+              <i class="now-ui-icons shopping_shop"></i>&nbsp;<span class="d-none d-sm-inline-flex"> &nbsp; Boutiques</span> 
+            </a>
+        </li> -->
           <li class="nav-item">
-              <a class="nav-link" href="products-listes" rel="tooltip" title="Liste des produits">
+              <a class="nav-link text-dark font-weight-bold" href="products-listes" rel="tooltip" title="Liste des produits">
                 <i class="now-ui-icons shopping_bag-16"></i>&nbsp;Produits
               </a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="categories-listes" rel="tooltip" title="Liste des catégories">
-                <i class="now-ui-icons shopping_tag-content"></i>&nbsp;Catégories
-              </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark font-weight-bold" href="categories-listes" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="now-ui-icons shopping_tag-content"></i>&nbsp;Catégories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons tech_laptop"></i> éléctroniques</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons tech_mobile"></i> Mobiles</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons design_vector"></i> Electroménageres</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons tech_tv"></i> TV & écrans</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons clothes_tie-bow"></i> Models</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons transportation_bus-front-12"></i> Automobiles</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons shopping_shop"></i> Meubles</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons emoticons_satisfied"></i> Pour Bebes</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons sport_user-run"></i> Pour Sports</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="#"><i class="now-ui-icons tech_controller-modern"></i> Pour Jeux</a>
+              <a class="dropdown-item text-dark font-weight-bold" href="categories-listes"><i class="now-ui-icons design_bullet-list-67"></i> Tous catégories</a>
+            </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="collections-listes" rel="tooltip" title="Liste des collections">
-                <i class="now-ui-icons shopping_box"></i>&nbsp;Collections
+              <a class="nav-link text-dark font-weight-bold" href="marques-listes" rel="tooltip" title="Liste des marques">
+                <i class="now-ui-icons location_bookmark"></i>&nbsp;Marques
               </a>
           </li>
       </ul>
@@ -97,22 +124,37 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+          <a href="#" class="nav-link dropdown-toggle text-dark font-weight-bold" id="navbarDropdownMenuLink1" data-toggle="dropdown">
             <span href=""  class="btn btn-neutral btn-icon btn-twitter btn-round btn-sm" 
             style="background-image:url('assets/images/32784.jpg'); background-size: 100% 100%;" title="Follow us">
               
             </span>
-            <p> &nbsp; {{currentuser?.prenom}} {{currentuser?.nom}}</p>
+            <p> &nbsp;  {{currentuser?.prenom}} {{currentuser?.nom}}</p>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
-            <a class="dropdown-item" href="profile">
+            <a class="dropdown-item text-uppercase text-dark" href="profile">
               <i class="now-ui-icons users_single-02"></i> Profile
             </a>
-            <a class="dropdown-item" href="profile">
-              <i class="now-ui-icons shopping_cart-simple"></i> Pannier
+            <a class="dropdown-item text-uppercase text-dark" href="pannier">
+              <i class="now-ui-icons shopping_cart-simple"></i>&nbsp;Panier
             </a>
-            <a class="dropdown-item" target="_blank" href="">
-              <i class="fa fa-sign-out" onclick="logout()"></i> Déconnexion
+            <!-- <a class="dropdown-item text-uppercase text-dark font-weight-bold" href="boutiques-listes">
+              <i class="now-ui-icons shopping_shop"></i>&nbsp;Boutiques
+            </a> -->
+            <a class="dropdown-item text-uppercase text-dark font-weight-bold" href="products-listes">
+              <i class="now-ui-icons shopping_bag-16"></i>&nbsp;Produits
+            </a>
+            <a class="dropdown-item text-uppercase text-dark font-weight-bold" href="categories-listes">
+              <i class="now-ui-icons shopping_tag-content"></i>&nbsp;Catégories
+            </a>
+            <a class="dropdown-item text-uppercase text-dark font-weight-bold" href="marques-listes">
+              <i class="now-ui-icons location_bookmark"></i>&nbsp;Marques
+            </a>
+            <a class="dropdown-item text-uppercase text-dark" href="password">
+              <i class="fa fa-lock"></i>&nbsp;modifier mot de passe
+            </a> 
+            <a class="dropdown-item text-uppercase text-dark" onclick="logout()" href="">
+              <i class="fa fa-sign-out"></i> Déconnexion
             </a>
           </div>
         </li>
