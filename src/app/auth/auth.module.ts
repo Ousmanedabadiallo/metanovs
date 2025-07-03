@@ -18,6 +18,7 @@ import { ProductslistesComponent } from './productslistes/productslistes.compone
 import { MarquesComponent } from './marques/marques.component';
 import { MarqueslistesComponent } from './marqueslistes/marqueslistes.component';
 import { PasswordComponent } from './password/password.component';
+import { FacturesComponent } from './factures/factures.component';
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import { PasswordComponent } from './password/password.component';
       ProductslistesComponent,
       MarquesComponent,
       MarqueslistesComponent,
-      PasswordComponent
+      PasswordComponent,
+      FacturesComponent
     ],
     imports: [
       CommonModule,

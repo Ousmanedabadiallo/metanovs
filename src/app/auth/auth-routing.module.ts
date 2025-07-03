@@ -11,11 +11,13 @@ import { CategoriesComponent } from './categories/categories.component';
 import { CategorieslistesComponent } from './categorieslistes/categorieslistes.component';
 import { MarquesComponent } from './marques/marques.component';
 import { MarqueslistesComponent } from './marqueslistes/marqueslistes.component';
+import { FacturesComponent } from './factures/factures.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'accueil'},
     { path: 'accueil', component: AcceuilComponent, data: { title: 'Accueil | METATNOV' }},
     { path: 'profile', component: ProfileComponent, data: { title: 'Profile | METATNOV' }},
+    { path: 'facture', component: FacturesComponent, data: { title: 'facture | METATNOV' }},
     { path: 'password', component: PasswordComponent, data: { title: 'Modifier mot de passe | METATNOV' }},
     { path: 'pannier', component: CardComponent, data: { title: 'Pannier | METATNOV' }},
     { path: 'mode-payement', component: ChekoutComponent, data: { title: 'Mode de payement | METATNOV' }},
