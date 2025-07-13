@@ -19,16 +19,16 @@
                             </ol>
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
-                                    <img class="d-block img-raised" src="assets/images/shop5.png" alt="First slide">
+                                    <img class="d-block img-raised" src="assets/images/2147949844.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-raised" src="assets/images/shop6.png" alt="Second slide">
+                                    <img class="d-block img-raised" src="assets/images/2147949844.jpg" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-raised" src="assets/images/shop9.png" alt="Third slide">
+                                    <img class="d-block img-raised" src="assets/images/2147949844.jpg" alt="Third slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block img-raised" src="assets/images/shop10.png" alt="Third slide">
+                                    <img class="d-block img-raised" src="assets/images/2147949844.jpg" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
@@ -44,12 +44,12 @@
                         </div>
                     </div>
                     <div class="col-md-6 ml-auto mr-auto">
-                        <h2 class="title"> Nom_Produit </h2>
-                        <h5 class="category">
-                          <a href="categories-listes" class="text-success"> <i class="now-ui-icons shopping_tag-content"></i>&nbsp;Catégories </a> | 
-                          <a href="collections-listes" class="text-success"> <i class="now-ui-icons shopping_box"></i>&nbsp;Collections </a>
+                        <h2 class="title text-uppercase "> Nom_Produit </h2>
+                        <h5 class="category text-uppercase small">
+                          <a href="marques" class="text-dark"> <i class="now-ui-icons location_bookmark"></i>&nbsp;marque </a> | 
+                          <a href="categories" class="text-dark"> <i class="now-ui-icons shopping_tag-content"></i>&nbsp;catégorie </a>
                         </h5>
-                        <h2 class="main-price">000 000 F CFA</h2>
+                        <h2 class="main-price font-weight-bold">000 000 F CFA</h2>
                         <div class="color-swatches clearfix">
                           <span>Couleur :</span>
                           <a href="#" class="swatch-violet"></a>
@@ -61,10 +61,13 @@
                         </div>
         
                         <div class="row pick-size">
-                            <div class="col-lg-6 col-md-8 col-sm-6">
-
-                                <p class="label">Selection couleur</p>
-                                <div class="form-check form-check-radio form-check-inline">
+                            <div class="col-lg-6 col-md-8 col-sm-6" id="accordion" role="tablist" aria-multiselectable="false">
+                                <p class="label small text-uppercase font-weight-bold" role="tab" id="headingOne">
+                                  <span class="" data-toggle="collapse" data-parent="#accordion" href="#selectColor" aria-expanded="true" aria-controls="selectColor">
+                                    Selectionner couleur 
+                                  </span>
+                                </p>
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox1" value="option1"> Noir
                                     <span class="form-check-sign">
@@ -72,7 +75,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox2" value="option2"> Blanc
                                     <span class="form-check-sign">
@@ -80,7 +83,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox3" value="option3"> Rouge
                                     <span class="form-check-sign">
@@ -88,7 +91,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox4" value="option4"> Jaune
                                     <span class="form-check-sign">
@@ -96,7 +99,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox5" value="option5"> Bleu
                                     <span class="form-check-sign">
@@ -104,7 +107,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox6" value="option6"> Vert
                                     <span class="form-check-sign">
@@ -112,7 +115,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox7" value="option7"> Orange
                                     <span class="form-check-sign">
@@ -120,7 +123,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox8" value="option8"> Violet
                                     <span class="form-check-sign">
@@ -128,7 +131,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectColor" role="tabpanel" aria-labelledby="selectColor">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="couleur" id="inlineCheckbox9" value="option9"> Transparent
                                     <span class="form-check-sign">
@@ -137,10 +140,15 @@
                                   </label>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-8 col-sm-6">
+                            <div class="col-lg-6 col-md-8 col-sm-6" id="accordion" role="tablist" aria-multiselectable="false">
                               
-                                <p class="label">Tailles</p>
-                                <div class="form-check form-check-radio form-check-inline">
+                              <p class="label small text-uppercase font-weight-bold" role="tab" id="headingOne">
+                                <span class="" data-toggle="collapse" data-parent="#accordion" href="#selectTaille" aria-expanded="true" aria-controls="selectTaille">
+                                  Selectionner Tailles
+                                </span>
+                              </p>
+                                <p class="label"></p>
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectTaille" role="tabpanel" aria-labelledby="selectTaille">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="Taille" id="taillePr1" value="option1"> XS
                                     <span class="form-check-sign">
@@ -148,7 +156,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectTaille" role="tabpanel" aria-labelledby="selectTaille">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="Taille" id="taillePr2" value="option2"> S
                                     <span class="form-check-sign">
@@ -156,7 +164,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectTaille" role="tabpanel" aria-labelledby="selectTaille">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="Taille" id="taillePr3" value="option3"> M
                                     <span class="form-check-sign">
@@ -164,7 +172,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectTaille" role="tabpanel" aria-labelledby="selectTaille">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="Taille" id="taillePr4" value="option4"> L
                                     <span class="form-check-sign">
@@ -172,7 +180,7 @@
                                     </span>
                                   </label>
                                 </div>
-                                <div class="form-check form-check-radio form-check-inline">
+                                <div class="form-check form-check-radio form-check-inline collapse" id="selectTaille" role="tabpanel" aria-labelledby="selectTaille">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="Taille" id="taillePr5" value="option5"> XL
                                     <span class="form-check-sign">
@@ -198,7 +206,7 @@
                                 </a>
                             </div>
         
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
                               <div class="card-body">
                                 <p>Eres' daring 'Grigri Fortune' swimsuit has the fit and coverage of a bikini in a one-piece silhouette. This fuchsia style is crafted from the label's sculpting peau douce fabric and has flattering cutouts through the torso and back. Wear yours with mirrored sunglasses on vacation.</p>
                               </div>

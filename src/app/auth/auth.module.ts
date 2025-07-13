@@ -11,14 +11,13 @@ import { CardComponent } from './card/card.component';
 import { ChekoutComponent } from './chekout/chekout.component';
 import { ProductsComponent } from './products/products.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { CollectionsListesComponent } from './collections-listes/collections-listes.component';
 import { CategorieslistesComponent } from './categorieslistes/categorieslistes.component';
-import { CollectionComponent } from './collection/collection.component';
 import { ProductslistesComponent } from './productslistes/productslistes.component';
 import { MarquesComponent } from './marques/marques.component';
 import { MarqueslistesComponent } from './marqueslistes/marqueslistes.component';
 import { PasswordComponent } from './password/password.component';
 import { FacturesComponent } from './factures/factures.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
     declarations: [
@@ -30,14 +29,13 @@ import { FacturesComponent } from './factures/factures.component';
       ChekoutComponent,
       ProductsComponent,
       CategoriesComponent,
-      CollectionsListesComponent,
       CategorieslistesComponent,
-      CollectionComponent,
       ProductslistesComponent,
       MarquesComponent,
       MarqueslistesComponent,
       PasswordComponent,
-      FacturesComponent
+      FacturesComponent,
+      ContactsComponent
     ],
     imports: [
       CommonModule,
